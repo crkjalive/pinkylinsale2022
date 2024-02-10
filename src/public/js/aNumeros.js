@@ -3,13 +3,7 @@ let costo = document.querySelectorAll('.totalCosto')
 let utilidad = document.querySelectorAll('.totalUtilidad')
 let cantidad = document.querySelectorAll('.totalCantidad')
 let granformato = document.querySelectorAll('.formato')
-<<<<<<< HEAD
 
-=======
-console.log(granformato)
-
-
->>>>>>> 28a7aa189f53bd818ebd82f25ec5949ed099247e
 let aNumeros0 = 0; 
 let aNumeros1 = 0;
 let aNumeros2 = 0;
