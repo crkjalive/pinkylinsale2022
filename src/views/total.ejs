@@ -22,10 +22,10 @@
     <% data.map( (indice) => { %>
       <div class="mes_total">
         <div class="mes"><%= indice.mes %></div>
-        <div class="totalVenta"><%= indice.total %></div>
-        <div class="totalCosto"><%= indice.costo %></div>
-        <div class="totalUtilidad"><%= indice.utilidad %></div>
-        <div class="totalCantidad prendas"><%= indice.cantidad %></div>
+        <div class="ceros totalVenta"><%= indice.total %></div>
+        <div class="ceros totalCosto"><%= indice.costo %></div>
+        <div class="ceros totalUtilidad"><%= indice.utilidad %></div>
+        <div class="ceros totalCantidad prendas"><%= indice.cantidad %></div>
         
         <% granTotal += indice.total %>
         <% granCosto += indice.costo %>
@@ -59,4 +59,5 @@
     
   <script src="/js/index.js"></script>
   <script src="/js/aNumeros.js"></script>
+  <script src="/js/ceros.js"></script>
 </body>
