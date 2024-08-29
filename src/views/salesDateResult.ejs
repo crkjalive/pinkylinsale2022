@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="shortcut icon" href="/ico/ico.ico" type="image/x-icon" />
-    <title>😚 Resultados por fechas</title>
+    <title>📅 registros por rango de fecha</title>
   </head>
   <body>
     <header id="header_container" class="header_container"></header>
 
     <h1 class="title_web">Busqueda Exitosa</h1>
 
-    <% let conteo=0; let costo=0; let venta=0; let utilidad=0; %>
+    <% let conteo=0; let costo=0; let venta=0; let utilidad=0; let cantidadSuma=0; %>
 
     <section class="salesResults">
       <div class="titles_container">
         <div id="mostrarConteo" class="title ancho"></div>
         <div class="title"></div>
         <div class="title"></div>
-        <div class="title"></div>
+        <div id="mostrarPrendas" class="title ancho"></div>
         <div class="title"></div>
         <div id="mostrarCosto" class="title ancho"></div>
         <div id="mostrarVenta" class="title ancho"></div>
@@ -55,6 +55,7 @@
 
           <% conteo += indice.conteo %> <% costo += indice.costo_total %> <%
           venta += indice.venta_total %> <% utilidad += indice.utilidad_total %>
+          <% cantidadSuma += indice.cantidad_total%>
         </div>
 
         <% }) %>
@@ -62,9 +63,31 @@
 
       <div id="ocultarConteo"><%= conteo %></div>
       <div id="ocultarCosto"><%= costo %></div>
+      <div id="ocultarPrendas"><%= cantidadSuma %></div>
       <div id="ocultarVenta"><%= venta %></div>
       <div id="ocultarUtilidad"><%= utilidad %></div>
     </section>
+
+    <section class="salesResults">
+      
+      <% let dpthere = 0; let dpkhriz = 0; let nqthere = 0; let nqkhriz = 0; let ef = 0; let bl = 0; %>
+
+      <div class="data_container">
+
+        <% salesDate.map((x) => { %> 
+          
+          <!-- %= x.payment_method == 'DAVIPLATATHERE' ? dpthere += x.price : dpthere += 0 % -->
+          <!-- %= x.payment_method == 'EFECTIVO' ? ef + x.price : ef + 0 % -->
+
+          <!-- <div class="registro" -->
+          <!-- <div class="data">--> <!-- %-- = dpthere %></div> -->
+          <!-- <div class="data"> --><!-- %= ef %></div> -->
+          <!-- </div> -->
+          
+        <% }) %>
+      </div>
+    </section>
+
     <footer class="footer_container" id="footer_container"></footer>
     <script src="/js/index.js"></script>
     <script src="/js/format.js"></script>

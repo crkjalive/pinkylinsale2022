@@ -1,3 +1,6 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .gridProducts{
   display: grid;
   grid-template-columns: 4% 6% 7% 30% 8% 10% 10% 15% 5% 5%;
@@ -44,7 +47,7 @@
   text-align: center;
   justify-content: center;
   align-items: center ;
-
+  
 }
 .productsDataDate .data_container .data .btn-delete{
   margin: 0;
@@ -61,14 +64,9 @@
   cursor: pointer;
   background-color: var(--colorAzul);
   width: 100%;
+  font-family: "arial";
 }
 .productsDataDate .data_container .data .btn-update:hover{
   padding: .5em 0;
 }
 
-.productsDataDate .data_container .data .img_icon{
-  padding: 0;
-  margin: 0;
-  width: 50px;
-  align-content: center;
-}

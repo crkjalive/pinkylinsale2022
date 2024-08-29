@@ -1,11 +1,7 @@
 .contenedor_day{
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
-  justify-content: left;
-=======
   justify-content:flex-start;
->>>>>>> 28a7aa189f53bd818ebd82f25ec5949ed099247e
 }
 .registroDay{
   background-color: rgb(244, 244, 244);
@@ -23,7 +19,7 @@
 .valorColor{
   font-size: 1.4em;
   padding: .5em ;
-  background-color:white;
+  background-color:rgba(244, 244, 244,.3);
   border-radius: 8px;
   font-weight:bold;
   color: black;

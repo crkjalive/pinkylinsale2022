@@ -36,7 +36,7 @@ const getSearchStock = (req, res) => {
 
 const getStock = (req, res) => {
   
-  const sql = `SELECT products.id_product, products.reference, products.description, products.stock, products.stock - sum(sales.quantity) as stockActual, sum(sales.quantity) AS sales FROM products LEFT JOIN sales ON products.id_product = sales.id_product GROUP BY products.id_product ORDER BY products.reference ASC;
+  const sql = `SELECT products.id_product, products.reference, products.description, products.stock, products.stock - sum(sales.quantity) as stockActual, sum(sales.quantity) AS sales, category FROM products LEFT JOIN sales ON products.id_product = sales.id_product GROUP BY products.id_product ORDER BY products.reference ASC;
   `
   
   connection.query(sql, (err, result) => {
