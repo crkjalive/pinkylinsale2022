@@ -104,8 +104,8 @@ ALTER TABLE `bills`
 --
 -- AUTO_INCREMENT de la tabla `products`
 --
-ALTER TABLE `products`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT;
+  ALTER TABLE `products`
+    MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `sales`
